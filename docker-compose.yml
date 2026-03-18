@@ -3,6 +3,9 @@ services:
     build: .
     ports:
       - "25565:25565"
+    environment:
+      - JVM_INITIAL_RAM_PERCENT=60.0
+      - JVM_MAX_RAM_PERCENT=85.0
     volumes:
       - ./data/SMP:/app/world
       - ./data/server.properties:/app/server.properties
