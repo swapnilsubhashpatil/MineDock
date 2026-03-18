@@ -33,3 +33,4 @@ data/plugins/*.jar
 
 # Local backup artifacts
 server-vanilla-backup.jar
+.env
