@@ -8,6 +8,8 @@ services:
       - JVM_MAX_RAM_PERCENT=85.0
     volumes:
       - ./data/SMP:/app/world
+      - ./data/SMP_nether:/app/world_nether
+      - ./data/SMP_the_end:/app/world_the_end
       - ./data/server.properties:/app/server.properties
       - ./data/server-icon.png:/app/server-icon.png
       - ./data/ops.json:/app/ops.json

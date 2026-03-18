@@ -1,5 +1,7 @@
 # Minecraft world/runtime data (do not track)
 data/SMP/
+data/SMP_nether
+data/SMP_the_end
 
 # Plugin runtime caches/temp/remap outputs
 data/plugins/.paper-remapped/
