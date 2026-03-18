@@ -6,5 +6,6 @@ services:
     volumes:
       - ./data/SMP:/app/world
       - ./data/server.properties:/app/server.properties
+      - ./data/ops.json:/app/ops.json
       - ./data/plugins:/app/plugins
     restart: unless-stopped

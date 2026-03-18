@@ -1,0 +1,35 @@
+# Minecraft world/runtime data (do not track)
+data/SMP/
+
+# Plugin runtime caches/temp/remap outputs
+data/plugins/.paper-remapped/
+data/plugins/spark/
+data/plugins/**/libs/
+data/plugins/**/logs/
+
+# Plugin databases and volatile binary state
+data/plugins/**/*.db
+data/plugins/**/*.db-*
+data/plugins/**/*.mv.db
+data/plugins/**/userdata/
+data/plugins/**/userdata-npc-backup/
+data/plugins/**/warps/
+data/plugins/**/maps/
+data/plugins/**/storages/
+data/plugins/**/packs/
+data/plugins/**/web/
+data/plugins/**/webroot/
+data/plugins/**/tmp*/
+
+# Binary/id caches generated at runtime
+data/plugins/**/usermap.bin
+data/plugins/**/uuids*.bin
+data/plugins/**/*.tmp
+data/plugins/**/*.tmp.*
+
+# Plugin jars are dependencies, not source
+# (keep versions documented separately if needed)
+data/plugins/*.jar
+
+# Local backup artifacts
+server-vanilla-backup.jar
