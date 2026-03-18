@@ -35,4 +35,7 @@ data/plugins/*.jar
 
 # Local backup artifacts
 server-vanilla-backup.jar
+data.zip
+data/SMP.zip
+.data.tmp.zip
 .env
