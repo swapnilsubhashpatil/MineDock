@@ -1,6 +1,6 @@
-# Contributing to DockerCraft SMP
+# Contributing to MineDock
 
-Thank you for your interest in contributing to DockerCraft SMP! This document provides guidelines for contributing.
+Thank you for your interest in contributing to MineDock! This document provides guidelines for contributing.
 
 ## How to Contribute
 
@@ -42,8 +42,8 @@ We welcome feature suggestions! Please:
 
 ```bash
 # Clone your fork
-git clone https://github.com/your-username/dockercraft-smp.git
-cd dockercraft-smp
+git clone https://github.com/swapnilsubhashpatil/MineDock.git
+cd MineDock
 
 # Run locally
 docker-compose up -d --build

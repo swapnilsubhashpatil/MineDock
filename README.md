@@ -1,4 +1,4 @@
-# 🎮 DockerCraft SMP
+# 🎮 MineDock
 
 > A production-ready, containerized Minecraft 1.21.8 server with auto-scaling JVM, multi-dimension world support, and one-command deployment.
 
@@ -21,6 +21,7 @@
 | 🔒 **Secure by Default** | EULA accepted, configurable whitelist, ops management |
 | ☁️ **Cloud Native** | Ready for AWS, GCP, Azure deployment |
 | 🖥️ **Cross-Platform** | Works on Linux, macOS, and Windows (WSL2) |
+| 🎯 **Production Ready** | Battle-tested configuration for SMP servers |
 
 ---
 
@@ -35,20 +36,25 @@
 ### 1. Clone & Download Server JAR
 
 ```bash
-git clone https://github.com/yourusername/dockercraft-smp.git
-cd dockercraft-smp
+git clone https://github.com/swapnilsubhashpatil/minedock.git
+cd minedock
 
 # Download Minecraft 1.21.8 Paper server (recommended)
 curl -L -o server.jar https://api.papermc.io/v2/projects/paper/versions/1.21.8/builds/latest/downloads/paper-1.21.8.jar
 
 # Or use the quick-start script which guides you through setup
+chmod +x scripts/quick-start.sh
 ./scripts/quick-start.sh
 ```
 
 ### 2. Launch Server
 
 ```bash
-docker-compose up -d
+# Build and start the server
+docker-compose up -d --build
+
+# Or use the quick-start script for guided setup
+./scripts/quick-start.sh
 ```
 
 ### 3. Connect to Your Server
@@ -201,7 +207,7 @@ MIT License - see [LICENSE](LICENSE) file.
 
 If this project helps you, please give it a ⭐!
 
-[![Star History Chart](https://api.star-history.com/svg?repos=yourusername/dockercraft-smp&type=Date)](https://star-history.com/#yourusername/dockercraft-smp&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=swapnilsubhashpatil/MineDock&type=Date)](https://star-history.com/#swapnilsubhashpatil/MineDock&Date)
 
 ---
 
