@@ -1,3 +1,7 @@
+<div align="center">
+
+![MineDock Banner](https://img.shields.io/badge/GitHub+%2B+Minecraft+%2B+Docker-MineDock-0077D6?style=for-the-badge&logo=github&logoColor=white&labelColor=24292e)
+
 # 🎮 MineDock
 
 > A production-ready, containerized Minecraft 1.21.8 server with auto-scaling JVM, multi-dimension world support, and one-command deployment.
@@ -6,6 +10,8 @@
 [![Minecraft](https://img.shields.io/badge/Minecraft-1.21.8-brightgreen?logo=minecraft)](https://minecraft.net)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Cloud](https://img.shields.io/badge/Cloud-AWS%20%7C%20GCP%20%7C%20Azure-orange)](docs/CLOUD_DEPLOYMENT.md)
+
+</div>
 
 ---
 
