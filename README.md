@@ -2,7 +2,7 @@
 
 ![MineDock Banner](https://img.shields.io/badge/GitHub+%2B+Minecraft+%2B+Docker-MineDock-0077D6?style=for-the-badge&logo=github&logoColor=white&labelColor=24292e)
 
-# 🎮 MineDock
+# MineDock
 
 > A production-ready, containerized Minecraft 1.21.8 server with auto-scaling JVM, multi-dimension world support, and one-command deployment.
 
@@ -17,23 +17,24 @@
 
 ## ✨ Features
 
-| Feature | Description |
-|---------|-------------|
-| 🚀 **One-Command Deploy** | `docker-compose up -d` and you're live |
-| 🧠 **Auto-Scaling JVM** | Automatically adjusts memory based on container limits (60%-85%) |
-| 🌍 **Multi-Dimension Support** | Separate volumes for Overworld, Nether, and The End |
-| 🔌 **Plugin Ready** | Drop JARs into `data/plugins/` and restart |
-| 💾 **Smart Backups** | Built-in backup script with cloud sync support |
-| 🔒 **Secure by Default** | EULA accepted, configurable whitelist, ops management |
-| ☁️ **Cloud Native** | Ready for AWS, GCP, Azure deployment |
-| 🖥️ **Cross-Platform** | Works on Linux, macOS, and Windows (WSL2) |
-| 🎯 **Production Ready** | Battle-tested configuration for SMP servers |
+| Feature                        | Description                                                      |
+| ------------------------------ | ---------------------------------------------------------------- |
+| 🚀 **One-Command Deploy**      | `docker-compose up -d` and you're live                           |
+| 🧠 **Auto-Scaling JVM**        | Automatically adjusts memory based on container limits (60%-85%) |
+| 🌍 **Multi-Dimension Support** | Separate volumes for Overworld, Nether, and The End              |
+| 🔌 **Plugin Ready**            | Drop JARs into `data/plugins/` and restart                       |
+| 💾 **Smart Backups**           | Built-in backup script with cloud sync support                   |
+| 🔒 **Secure by Default**       | EULA accepted, configurable whitelist, ops management            |
+| ☁️ **Cloud Native**            | Ready for AWS, GCP, Azure deployment                             |
+| 🖥️ **Cross-Platform**          | Works on Linux, macOS, and Windows (WSL2)                        |
+| 🎯 **Production Ready**        | Battle-tested configuration for SMP servers                      |
 
 ---
 
 ## 🚀 Quick Start
 
 ### Prerequisites
+
 - [Docker](https://docs.docker.com/get-docker/)
 - [Docker Compose](https://docs.docker.com/compose/install/)
 - [Minecraft Server JAR](https://papermc.io/downloads) (1.21.8 recommended)
@@ -115,16 +116,19 @@ docker-compose down
 ## 🎯 Use Cases
 
 ### **For Server Owners**
+
 - **Zero-downtime updates** - Pull new images without losing world data
 - **Easy backups** - One script to backup everything
 - **Plugin management** - Simple JAR drop-in system
 
 ### **For Developers**
+
 - **Version control your config** - Track server.properties changes
 - **Reproducible environments** - Same server everywhere
 - **CI/CD ready** - Deploy with GitHub Actions
 
 ### **For Communities**
+
 - **Multi-dimension support** - Separate worlds for different game modes
 - **Scalable hosting** - Move from local to cloud seamlessly
 - **Secure sharing** - No world corruption on crashes
@@ -135,16 +139,16 @@ docker-compose down
 
 ### Environment Variables
 
-| Variable | Default | Description |
-|----------|---------|-------------|
-| `JVM_INITIAL_RAM_PERCENT` | 60.0 | Initial heap as % of container memory |
-| `JVM_MAX_RAM_PERCENT` | 85.0 | Max heap as % of container memory |
+| Variable                  | Default | Description                           |
+| ------------------------- | ------- | ------------------------------------- |
+| `JVM_INITIAL_RAM_PERCENT` | 60.0    | Initial heap as % of container memory |
+| `JVM_MAX_RAM_PERCENT`     | 85.0    | Max heap as % of container memory     |
 
 ### Port Configuration
 
 ```yaml
 ports:
-  - "25565:25565"  # Minecraft server port
+  - "25565:25565" # Minecraft server port
 ```
 
 > 💡 **Custom Port?** See [CLOUD_DEPLOYMENT.md](docs/CLOUD_DEPLOYMENT.md) for network tag configuration.
@@ -153,14 +157,14 @@ ports:
 
 ## 📚 Documentation
 
-| Guide | Description |
-|-------|-------------|
-| [☁️ Cloud Deployment](docs/CLOUD_DEPLOYMENT.md) | Deploy on AWS, GCP, or Azure with network tags |
-| [🔌 Plugin Guide](docs/PLUGIN_GUIDE.md) | Install and manage plugins |
-| [🌍 World Management](docs/WORLD_MANAGEMENT.md) | Import existing worlds or create new ones |
-| [⚙️ Server Properties](docs/SERVER_PROPERTIES.md) | Complete configuration reference |
-| [💾 Backup Guide](docs/BACKUP_GUIDE.md) | Local and cloud backup strategies |
-| [📋 Version Guide](docs/VERSION_GUIDE.md) | Minecraft 1.21.8 compatibility and updates |
+| Guide                                             | Description                                    |
+| ------------------------------------------------- | ---------------------------------------------- |
+| [☁️ Cloud Deployment](docs/CLOUD_DEPLOYMENT.md)   | Deploy on AWS, GCP, or Azure with network tags |
+| [🔌 Plugin Guide](docs/PLUGIN_GUIDE.md)           | Install and manage plugins                     |
+| [🌍 World Management](docs/WORLD_MANAGEMENT.md)   | Import existing worlds or create new ones      |
+| [⚙️ Server Properties](docs/SERVER_PROPERTIES.md) | Complete configuration reference               |
+| [💾 Backup Guide](docs/BACKUP_GUIDE.md)           | Local and cloud backup strategies              |
+| [📋 Version Guide](docs/VERSION_GUIDE.md)         | Minecraft 1.21.8 compatibility and updates     |
 
 ---
 
@@ -168,14 +172,14 @@ ports:
 
 ### Traditional Server vs DockerCraft
 
-| Aspect | Traditional | DockerCraft |
-|--------|-------------|-------------|
-| **Setup Time** | 30+ minutes | 2 minutes |
-| **Portability** | Manual reconfiguration | `docker-compose up` anywhere |
-| **Backups** | Complex scripts | Built-in automation |
-| **Updates** | Risk of data loss | Immutable, versioned images |
-| **Resource Usage** | Fixed allocation | Auto-scales with container |
-| **Multi-server** | Complex | Simple compose profiles |
+| Aspect             | Traditional            | DockerCraft                  |
+| ------------------ | ---------------------- | ---------------------------- |
+| **Setup Time**     | 30+ minutes            | 2 minutes                    |
+| **Portability**    | Manual reconfiguration | `docker-compose up` anywhere |
+| **Backups**        | Complex scripts        | Built-in automation          |
+| **Updates**        | Risk of data loss      | Immutable, versioned images  |
+| **Resource Usage** | Fixed allocation       | Auto-scales with container   |
+| **Multi-server**   | Complex                | Simple compose profiles      |
 
 ### Single Container Benefits
 
